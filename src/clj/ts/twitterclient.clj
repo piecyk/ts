@@ -21,13 +21,13 @@
                        :oauth-creds my-creds
                        :callbacks (tas/AsyncStreamingCallback.
                                    (fn [_resp payload]
-                                     (go
+                                     (go ;; TODO: refactor
                                        (if-not (clojure.string/blank? (str payload))
                                          (doseq [client (keys @clients)]
                                            (println "send new tweet")
                                            (send! client (str payload)))
                                          {})
-                                       (Thread/sleep (rand-int 1500))
+                                       (Thread/sleep (rand-int 1000))
                                        ))
                                    (fn [_resp]
                                      (println _resp))

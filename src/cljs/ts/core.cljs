@@ -41,13 +41,22 @@
   (set! (.-onmessage ws) (fn [msg] (put! receive msg)))
   (recive-tweet))
 
+(defn parse [obj]
+  (try
+    (.parse js/JSON obj)
+    (catch :default e
+      js/undefined)))
+
 (defn render-tweets []
   [:div "Tweets stream for statuses @scala:"
    [:ul
     (for [tweet @tweets]
-      (let [el (.parse js/JSON tweet)]
-        (.log js/console "render")
-        ^{:key (.-id el)} [:li (.-text el)]))]])
+      (let [el (parse tweet)]
+        (if (= el js/undefined)
+          (.log js/console "el is undefined")
+          ^{:key (.-id el)} [:li (.-text el)]
+          ))
+          )]])
 
 ;; -------------------------
 ;; Views
