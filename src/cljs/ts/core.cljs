@@ -7,10 +7,16 @@
               [cljsjs.react :as react]
               [cognitect.transit :as ct]
               [cljs.core.async :refer [chan <! >! put! close! timeout]])
-  (:require-macros [cljs.core.async.macros :refer [go go-loop]])
+  (:require-macros [cljs.core.async.macros :refer [alt! go go-loop]])
   (:import goog.History))
 
 ;; (def r (ct/reader :json))
+(defn log [& args]
+ (.log js/console (str args)))
+;; use cognitect.transit
+(defn parse [obj]
+  (try (.parse js/JSON obj)
+       (catch :default e js/undefined)))
 
 (def ws-url
   (let [url (clojure.string/replace js/window.location.href #"^http" "ws")]
@@ -21,37 +27,25 @@
 (def receive (chan))
 (def tweets (atom []))
 
-
 (defn add-tweet [tweets new-tweet]
-  (.log js/console "add-tweet" (count tweets))
+  (log "add-tweet" (count tweets))
   (->> (cons new-tweet tweets)
        (take 10)))
 
-;; use cognitect.transit
-(defn parse [obj]
-  (try (.parse js/JSON obj)
-       (catch :default e js/undefined)))
-
 ;; sad panda
 (defn recive-tweet []
-  (.log js/console "recive-tweet")
+  (log "recive-tweet")
   (go (while true
         (let [msg (<! receive)]
-          (.log js/console "recive-tweet for chan")
+          (log "recive-tweet for chan")
           ;; very sad panda...
           (let [t (parse (.-data msg))]
             (if (= t js/undefined)
-              (.log js/console "t is undefined:" (.-data msg))
+              (log "t is undefined:" (.-data msg))
               (swap! tweets add-tweet t)))))))
 
-;; checking on heroku?
-(go-loop []
-  (when-let [msg (<! receive)]
-    (.log js/console "we have msg")
-    (recur)))
-
 (defn make-receiver []
-  (.log js/console "make recevier")
+  (log "make recevier")
   (set! (.-onmessage ws) (fn [msg] (put! receive msg)))
   (recive-tweet))
 
@@ -60,6 +54,15 @@
    [:ul (for [tweet @tweets]
           ^{:key (.-id tweet)} [:li (.-text tweet)])]])
 
+;; checking on heroku?
+(go-loop []
+  (when-let [msg (<! receive)]
+    (log "we have msg")
+    (recur)))
+
+(go (while true
+      (alt!
+        receive ([result] (log "we have?")))))
 
 ;; -------------------------
 ;; Views
