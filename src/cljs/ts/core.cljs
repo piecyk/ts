@@ -27,9 +27,11 @@
        (take 10)))
 
 (defn recive-tweet []
+  (.log js/console "recive-tweet")
   (go
     (while true
       (let [msg (<! receive)]
+        (.log js/console "recive-tweet for chan")
         ;; sad panda
         (swap! tweets add-tweet (.-data msg))
         ))))
@@ -44,6 +46,7 @@
    [:ul
     (for [tweet @tweets]
       (let [el (.parse js/JSON tweet)]
+        (.log js/console "render")
         ^{:key (.-id el)} [:li (.-text el)]))]])
 
 ;; -------------------------

@@ -24,7 +24,7 @@
                                      (go
                                        (if-not (clojure.string/blank? (str payload))
                                          (doseq [client (keys @clients)]
-                                           (println "send new status")
+                                           (println "send new tweet")
                                            (send! client (str payload)))
                                          {})
                                        (Thread/sleep (rand-int 1500))
