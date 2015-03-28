@@ -13,7 +13,7 @@
                  [reagent-forms "0.4.6"]
                  [reagent-utils "0.1.4"]
                  [org.clojure/clojurescript "0.0-3126" :scope "provided"]
-                 [org.clojure/core.async    "0.1.346.0-17112a-alpha"]
+                 [org.clojure/core.async    "0.1.346.0-17112a-alpha" :scope "provided"]
                  [ring "1.3.2"]
                  [ring/ring-defaults "0.1.4"]
                  [prone "0.8.1"]
