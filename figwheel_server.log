@@ -1,0 +1,1376 @@
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.135 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+notifying browser that file changed:  /ts/dev.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.368 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+notifying browser that file changed:  /ts/dev.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.608 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.2 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+notifying browser that file changed:  /ts/dev.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.254 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.268 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.3 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+notifying browser that file changed:  /ts/dev.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.515 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.246 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 1.289 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.372 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+notifying browser that file changed:  /ts/dev.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 1.045 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.342 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+notifying browser that file changed:  /ts/dev.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m               core.clj:4577 clojure.core/ex-info[39m
+[32m           compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m           compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m           compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m             closure.clj:367 cljs.closure/compile-dir[39m
+[32m             closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m             closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m             closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m             closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                 core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m               core.clj:2612 clojure.core/map[fn][39m
+[36m             LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m             LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                 RT.java:485 clojure.lang.RT.seq[39m
+[35m                core.clj:135 clojure.core/seq[39m
+[35m                core.clj:626 clojure.core/apply[39m
+[35m               core.clj:2650 clojure.core/mapcat[39m
+[36m             RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                 core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m            closure.clj:1413 cljs.closure/build[39m
+[32m                core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m         auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                 auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                 auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m               core.clj:6611 clojure.core/mapv[fn][39m
+[36m   PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m               core.clj:6513 clojure.core/reduce[39m
+[35m               core.clj:6611 clojure.core/mapv[39m
+[32m                auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m          ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m          ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m               async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m               async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m            channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                 AFn.java:22 clojure.lang.AFn.run[39m
+[34mThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m             Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mUnmatched delimiter )[39m
+[35m               core.clj:4577 clojure.core/ex-info[39m
+[35m        reader_types.clj:336 clojure.tools.reader.reader-types/reader-error[39m
+[36m             RestFn.java:439 clojure.lang.RestFn.invoke[39m
+[35m               reader.clj:66 clojure.tools.reader/read-unmatched-delimiter[39m
+[35m              reader.clj:743 clojure.tools.reader/read[39m
+[35m              reader.clj:729 clojure.tools.reader/read[39m
+[32m           analyzer.clj:1971 cljs.analyzer/forms-seq[fn][39m
+[32m           analyzer.clj:1965 cljs.analyzer/forms-seq[fn][39m
+[36m             LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m             LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                 RT.java:485 clojure.lang.RT.seq[39m
+[35m                core.clj:135 clojure.core/seq[39m
+[32m           compiler.clj:1006 cljs.compiler/compile-file*[fn][39m
+[32m            compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m            compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m           compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m               core.clj:4577 clojure.core/ex-info[39m
+[32m           compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m           compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m           compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m             closure.clj:367 cljs.closure/compile-dir[39m
+[32m             closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m             closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m             closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m             closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                 core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m               core.clj:2612 clojure.core/map[fn][39m
+[36m             LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m             LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                 RT.java:485 clojure.lang.RT.seq[39m
+[35m                core.clj:135 clojure.core/seq[39m
+[35m                core.clj:626 clojure.core/apply[39m
+[35m               core.clj:2650 clojure.core/mapcat[39m
+[36m             RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                 core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m            closure.clj:1413 cljs.closure/build[39m
+[32m                core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m         auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                 auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                 auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m               core.clj:6611 clojure.core/mapv[fn][39m
+[36m   PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m               core.clj:6513 clojure.core/reduce[39m
+[35m               core.clj:6611 clojure.core/mapv[39m
+[32m                auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m          ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m          ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m               async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m               async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m            channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                 AFn.java:22 clojure.lang.AFn.run[39m
+[34mThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m             Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mUnmatched delimiter )[39m
+[35m               core.clj:4577 clojure.core/ex-info[39m
+[35m        reader_types.clj:336 clojure.tools.reader.reader-types/reader-error[39m
+[36m             RestFn.java:439 clojure.lang.RestFn.invoke[39m
+[35m               reader.clj:66 clojure.tools.reader/read-unmatched-delimiter[39m
+[35m              reader.clj:743 clojure.tools.reader/read[39m
+[35m              reader.clj:729 clojure.tools.reader/read[39m
+[32m           analyzer.clj:1971 cljs.analyzer/forms-seq[fn][39m
+[32m           analyzer.clj:1965 cljs.analyzer/forms-seq[fn][39m
+[36m             LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m             LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                 RT.java:485 clojure.lang.RT.seq[39m
+[35m                core.clj:135 clojure.core/seq[39m
+[32m           compiler.clj:1006 cljs.compiler/compile-file*[fn][39m
+[32m            compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m            compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m           compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.336 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.299 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.297 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.291 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.264 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.286 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.402 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+notifying browser that file changed:  /ts/dev.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to cljs.core/replace at line 13 src/cljs/ts/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 1.215 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.275 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.26 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.334 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.334 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.305 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.233 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.257 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.297 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.255 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.213 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.193 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.203 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m               core.clj:4577 clojure.core/ex-info[39m
+[32m           compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m           compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m           compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m             closure.clj:367 cljs.closure/compile-dir[39m
+[32m             closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m             closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m             closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m             closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                 core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m               core.clj:2612 clojure.core/map[fn][39m
+[36m             LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m             LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                 RT.java:485 clojure.lang.RT.seq[39m
+[35m                core.clj:135 clojure.core/seq[39m
+[35m                core.clj:626 clojure.core/apply[39m
+[35m               core.clj:2650 clojure.core/mapcat[39m
+[36m             RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                 core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m            closure.clj:1413 cljs.closure/build[39m
+[32m                core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m         auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                 auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                 auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m               core.clj:6611 clojure.core/mapv[fn][39m
+[36m   PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m               core.clj:6513 clojure.core/reduce[39m
+[35m               core.clj:6611 clojure.core/mapv[39m
+[32m                auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m          ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m          ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m               async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m               async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m            channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                 AFn.java:22 clojure.lang.AFn.run[39m
+[34mThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m             Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mUnmatched delimiter )[39m
+[35m               core.clj:4577 clojure.core/ex-info[39m
+[35m        reader_types.clj:336 clojure.tools.reader.reader-types/reader-error[39m
+[36m             RestFn.java:439 clojure.lang.RestFn.invoke[39m
+[35m               reader.clj:66 clojure.tools.reader/read-unmatched-delimiter[39m
+[35m              reader.clj:743 clojure.tools.reader/read[39m
+[35m              reader.clj:729 clojure.tools.reader/read[39m
+[32m           analyzer.clj:1971 cljs.analyzer/forms-seq[fn][39m
+[32m           analyzer.clj:1965 cljs.analyzer/forms-seq[fn][39m
+[36m             LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m             LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                 RT.java:485 clojure.lang.RT.seq[39m
+[35m                core.clj:135 clojure.core/seq[39m
+[32m           compiler.clj:1006 cljs.compiler/compile-file*[fn][39m
+[32m            compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m            compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m           compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.21 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var ts.core/url at line 14 src/cljs/ts/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mToo many arguments to def at line 17 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m              analyzer.clj:799 cljs.analyzer/eval1331[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mToo many arguments to def at line 14 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m              analyzer.clj:799 cljs.analyzer/eval1331[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mToo many arguments to def at line 14 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m              analyzer.clj:799 cljs.analyzer/eval1331[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mbindings must be vector of even number of elements at line 12 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m             analyzer.clj:1066 cljs.analyzer/analyze-let[39m
+[32m             analyzer.clj:1122 cljs.analyzer/eval1442[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             analyzer.clj:1835 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mbindings must be vector of even number of elements at line 12 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m             analyzer.clj:1066 cljs.analyzer/analyze-let[39m
+[32m             analyzer.clj:1122 cljs.analyzer/eval1442[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             analyzer.clj:1835 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mToo many arguments to def at line 14 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m              analyzer.clj:799 cljs.analyzer/eval1331[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mToo many arguments to def at line 14 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m              analyzer.clj:799 cljs.analyzer/eval1331[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mToo many arguments to def at line 13 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m              analyzer.clj:799 cljs.analyzer/eval1331[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.209 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m               core.clj:4577 clojure.core/ex-info[39m
+[32m           compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m           compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m           compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m             closure.clj:367 cljs.closure/compile-dir[39m
+[32m             closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m             closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m             closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m             closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                 core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m               core.clj:2612 clojure.core/map[fn][39m
+[36m             LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m             LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                 RT.java:485 clojure.lang.RT.seq[39m
+[35m                core.clj:135 clojure.core/seq[39m
+[35m                core.clj:626 clojure.core/apply[39m
+[35m               core.clj:2650 clojure.core/mapcat[39m
+[36m             RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                 core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m            closure.clj:1413 cljs.closure/build[39m
+[32m                core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m         auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                 auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                 auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m               core.clj:6611 clojure.core/mapv[fn][39m
+[36m   PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m               core.clj:6513 clojure.core/reduce[39m
+[35m               core.clj:6611 clojure.core/mapv[39m
+[32m                auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m          ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m          ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m               async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m               async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m            channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                 AFn.java:22 clojure.lang.AFn.run[39m
+[34mThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m             Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mJavaScript literal must use map or vector notation[39m
+[35m               core.clj:4577 clojure.core/ex-info[39m
+[35m              reader.clj:766 clojure.tools.reader/read[39m
+[35m              reader.clj:729 clojure.tools.reader/read[39m
+[32m           analyzer.clj:1971 cljs.analyzer/forms-seq[fn][39m
+[32m           analyzer.clj:1965 cljs.analyzer/forms-seq[fn][39m
+[36m             LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m             LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                 RT.java:485 clojure.lang.RT.seq[39m
+[35m                core.clj:135 clojure.core/seq[39m
+[32m           compiler.clj:1006 cljs.compiler/compile-file*[fn][39m
+[32m            compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m            compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m           compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[31mCaused by: [39m[31mjava.lang.RuntimeException: [39m[31mJavaScript literal must use map or vector notation[39m
+[32m      tagged_literals.clj:37 cljs.tagged-literals/read-js[39m
+[35m              reader.clj:624 clojure.tools.reader/read-tagged*[39m
+[35m              reader.clj:665 clojure.tools.reader/read-tagged[39m
+[35m               reader.clj:59 clojure.tools.reader/read-dispatch[39m
+[35m              reader.clj:166 clojure.tools.reader/read-delimited[39m
+[35m              reader.clj:177 clojure.tools.reader/read-list[39m
+[35m              reader.clj:743 clojure.tools.reader/read[39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.193 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mToo many arguments to def at line 13 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m              analyzer.clj:799 cljs.analyzer/eval1331[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mToo many arguments to def at line 13 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m              analyzer.clj:799 cljs.analyzer/eval1331[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.241 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mToo many arguments to def at line 20 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m              analyzer.clj:799 cljs.analyzer/eval1331[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mToo many arguments to def at line 20 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m              analyzer.clj:799 cljs.analyzer/eval1331[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mToo many arguments to def at line 21 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m              analyzer.clj:799 cljs.analyzer/eval1331[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.209 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m             compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m             compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m             compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m               closure.clj:367 cljs.closure/compile-dir[39m
+[32m               closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m               closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m               closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                   core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m                 core.clj:2612 clojure.core/map[fn][39m
+[36m               LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m               LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                   RT.java:485 clojure.lang.RT.seq[39m
+[35m                  core.clj:135 clojure.core/seq[39m
+[35m                  core.clj:626 clojure.core/apply[39m
+[35m                 core.clj:2650 clojure.core/mapcat[39m
+[36m               RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                   core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m              closure.clj:1413 cljs.closure/build[39m
+[32m                  core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m           auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                   auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                   auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                   auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                  auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m                 core.clj:6611 clojure.core/mapv[fn][39m
+[36m     PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m                 core.clj:6513 clojure.core/reduce[39m
+[35m                 core.clj:6611 clojure.core/mapv[39m
+[32m                  auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                  auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m            ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m            ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m                 async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m                 async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m              channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                   AFn.java:22 clojure.lang.AFn.run[39m
+[34m  ThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m   ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m               Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mToo many arguments to def at line 13 src/cljs/ts/core.cljs[39m
+[35m                 core.clj:4577 clojure.core/ex-info[39m
+[32m              analyzer.clj:379 cljs.analyzer/error[39m
+[32m              analyzer.clj:376 cljs.analyzer/error[39m
+[32m              analyzer.clj:799 cljs.analyzer/eval1331[fn][39m
+[36m              MultiFn.java:251 clojure.lang.MultiFn.invoke[39m
+[32m             analyzer.clj:1833 cljs.analyzer/analyze-seq[39m
+[32m             analyzer.clj:1925 cljs.analyzer/analyze[fn][39m
+[32m             analyzer.clj:1918 cljs.analyzer/analyze[39m
+[32m             compiler.clj:1008 cljs.compiler/compile-file*[fn][39m
+[32m              compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m              compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m             compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.223 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.19 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.229 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.174 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.166 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.26 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.252 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.222 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.286 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var ts.core/create-ws-url+ at line 22 src/cljs/ts/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.241 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+[31mclojure.lang.ExceptionInfo: [39m[31mfailed compiling file:src/cljs/ts/core.cljs[39m
+[35m               core.clj:4577 clojure.core/ex-info[39m
+[32m           compiler.clj:1122 cljs.compiler/compile-file[fn][39m
+[32m           compiler.clj:1090 cljs.compiler/compile-file[39m
+[32m           compiler.clj:1152 cljs.compiler/compile-root[39m
+[32m             closure.clj:367 cljs.closure/compile-dir[39m
+[32m             closure.clj:407 cljs.closure/eval12185[fn][39m
+[32m             closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m             closure.clj:421 cljs.closure/eval12172[fn][39m
+[32m             closure.clj:315 cljs.closure/eval12121[fn][39m
+[32m                 core.clj:18 clojurescript-build.core.CompilableSourcePaths/fn[39m
+[35m               core.clj:2612 clojure.core/map[fn][39m
+[36m             LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m             LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                 RT.java:485 clojure.lang.RT.seq[39m
+[35m                core.clj:135 clojure.core/seq[39m
+[35m                core.clj:626 clojure.core/apply[39m
+[35m               core.clj:2650 clojure.core/mapcat[39m
+[36m             RestFn.java:423 clojure.lang.RestFn.invoke[39m
+[32m                 core.clj:18 clojurescript-build.core/clojurescript-build.core.CompilableSourcePaths[39m
+[32m            closure.clj:1413 cljs.closure/build[39m
+[32m                core.clj:150 clojurescript-build.core/build-source-paths*[39m
+[32m         auto_builder.clj:59 figwheel-sidecar.auto-builder/warning[fn][39m
+[32m                 auto.clj:55 clojurescript-build.auto/time-build[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:64 clojurescript-build.auto/after[fn][39m
+[32m                 auto.clj:71 clojurescript-build.auto/error[fn][39m
+[32m                 auto.clj:60 clojurescript-build.auto/before[fn][39m
+[32m                auto.clj:103 clojurescript-build.auto/make-conditional-builder[fn][39m
+[35m               core.clj:6611 clojure.core/mapv[fn][39m
+[36m   PersistentVector.java:332 clojure.lang.PersistentVector.reduce[39m
+[35m               core.clj:6513 clojure.core/reduce[39m
+[35m               core.clj:6611 clojure.core/mapv[39m
+[32m                auto.clj:184 clojurescript-build.auto/autobuild*[fn][39m
+[32m                auto.clj:177 clojurescript-build.auto/autobuild*[fn][39m
+[35m          ioc_macros.clj:940 clojure.core.async.impl.ioc-macros/run-state-machine[39m
+[35m          ioc_macros.clj:944 clojure.core.async.impl.ioc-macros/run-state-machine-wrapped[39m
+[35m               async.clj:362 clojure.core.async/ioc-alts![fn][39m
+[35m               async.clj:231 clojure.core.async/do-alts[fn][39m
+[35m            channels.clj:262 clojure.core.async.impl.channels.ManyToManyChannel/fn[39m
+[36m                 AFn.java:22 clojure.lang.AFn.run[39m
+[34mThreadPoolExecutor.java:1145 java.util.concurrent.ThreadPoolExecutor.runWorker[39m
+[34m ThreadPoolExecutor.java:615 java.util.concurrent.ThreadPoolExecutor$Worker.run[39m
+[34m             Thread.java:745 java.lang.Thread.run[39m
+[31mCaused by: [39m[31mclojure.lang.ExceptionInfo: [39m[31mEOF while reading, starting at line 17 and column 1[39m
+[35m               core.clj:4577 clojure.core/ex-info[39m
+[35m        reader_types.clj:336 clojure.tools.reader.reader-types/reader-error[39m
+[36m             RestFn.java:439 clojure.lang.RestFn.invoke[39m
+[35m              reader.clj:172 clojure.tools.reader/read-delimited[39m
+[35m              reader.clj:177 clojure.tools.reader/read-list[39m
+[35m              reader.clj:743 clojure.tools.reader/read[39m
+[35m              reader.clj:729 clojure.tools.reader/read[39m
+[32m           analyzer.clj:1971 cljs.analyzer/forms-seq[fn][39m
+[32m           analyzer.clj:1965 cljs.analyzer/forms-seq[fn][39m
+[36m             LazySeq.java:40 clojure.lang.LazySeq.sval[39m
+[36m             LazySeq.java:49 clojure.lang.LazySeq.seq[39m
+[36m                 RT.java:485 clojure.lang.RT.seq[39m
+[35m                core.clj:135 clojure.core/seq[39m
+[32m           compiler.clj:1006 cljs.compiler/compile-file*[fn][39m
+[32m            compiler.clj:950 cljs.compiler/with-core-cljs[39m
+[32m            compiler.clj:970 cljs.compiler/compile-file*[39m
+[32m           compiler.clj:1107 cljs.compiler/compile-file[fn][39m
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.208 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.22 seconds.[0m
+notifying browser that file changed:  /ts/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.223 seconds.[0m
+notifying browser that file changed:  /ts/core.js
