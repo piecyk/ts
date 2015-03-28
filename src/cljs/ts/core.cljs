@@ -28,13 +28,12 @@
 
 (defn recive-tweet []
   (.log js/console "recive-tweet")
-  (go
-    (while true
-      (let [msg (<! receive)]
-        (.log js/console "recive-tweet for chan")
-        ;; sad panda
-        (swap! tweets add-tweet (.-data msg))
-        ))))
+  (go-loop []
+    (when-let [msg (<! receive)]
+      (.log js/console "recive-tweet for chan")
+      ;; sad panda
+      (swap! tweets add-tweet (.-data msg))
+      (recur))))
 
 (defn make-receiver []
   (.log js/console "make recevier")
