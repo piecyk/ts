@@ -44,6 +44,12 @@
               (.log js/console "t is undefined:" (.-data msg))
               (swap! tweets add-tweet t)))))))
 
+;; checking on heroku?
+(go-loop []
+  (when-let [msg (<! receive)]
+    (.log js/console "we have msg")
+    (recur)))
+
 (defn make-receiver []
   (.log js/console "make recevier")
   (set! (.-onmessage ws) (fn [msg] (put! receive msg)))
