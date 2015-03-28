@@ -5,9 +5,15 @@
             [ring.middleware.defaults :refer [site-defaults wrap-defaults]]
             [selmer.parser :refer [render-file]]
             [prone.middleware :refer [wrap-exceptions]]
-            [environ.core :refer [env]]))
+            [environ.core :refer [env]]
+            [clojure.data.json :as json]
+            [clojure.core.async :refer [<! >! >!! put! close! go-loop go]]
+            [ts.twitterclient :as tst]
+            ))
 
 (def clients (atom {}))
+
+(tst/my-statuses clients)
 
 (defn ws-handler [req]
   (with-channel req channel

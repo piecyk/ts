@@ -21,7 +21,9 @@
                  [selmer "0.8.2"]
                  [environ "1.0.0"]
                  [secretary "1.2.2"]
-                 [http-kit "2.1.16"]]
+                 [com.cognitect/transit-cljs "0.8.205"]
+                 [http-kit "2.1.16"]
+                 [twitter-api "0.7.8"]]
 
   :plugins [[lein-cljsbuild "1.0.4"]
             [lein-environ "1.0.0"]

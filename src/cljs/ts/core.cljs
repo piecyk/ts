@@ -5,51 +5,57 @@
               [goog.events :as events]
               [goog.history.EventType :as EventType]
               [cljsjs.react :as react]
+              [cognitect.transit :as ct]
               [cljs.core.async :refer [chan <! >! put! close! timeout]])
   (:require-macros [cljs.core.async.macros :refer [go go-loop]])
   (:import goog.History))
 
+;; (def r (ct/reader :json))
 
-(def create-ws-url
+(def send (chan))
+(def receive (chan))
+(def tweets (atom []))
+
+(def ws-url
   (let [url (clojure.string/replace js/window.location.href #"^http" "ws")]
     (str url "ws")))
+(def ws (js/WebSocket. ws-url))
 
-(def conn
-  (js/WebSocket. create-ws-url))
+(defn add-tweet [tweets new-tweet]
+  (.log js/console "add-tweet" (count tweets))
+  (->> (cons new-tweet tweets)
+       (take 10)))
 
-(defn send-to-server [msg]
-  (do
-    (.send conn (.stringify js/JSON (js-obj "msg" msg)))))
+(defn recive-tweet []
+  (go
+    (while true
+      (let [msg (<! receive)]
+        ;; sad panda
+        (swap! tweets add-tweet (.-data msg))
+        ))))
 
-(set! (.-onload js/window)
-      (fn []
-        (go
-          (send-to-server "test"))))
+(defn make-receiver []
+  (.log js/console "make recevier")
+  (set! (.-onmessage ws) (fn [msg] (put! receive msg)))
+  (recive-tweet))
 
-(set! (.-onopen conn)
-  (fn [e]
-    (.send conn
-      (.stringify js/JSON (js-obj "command" "getall")))))
-
-(set! (.-onerror conn)
-  (fn []
-    (.log js/console js/arguments)))
-
-(set! (.-onmessage conn)
-  (fn [e]
-    (let [msgs (.parse js/JSON (.-data e))]
-      (.log js/console msgs))))
+(defn render-tweets []
+  [:div "Tweets stream for statuses @scala:"
+   [:ul
+    (for [tweet @tweets]
+      (let [el (.parse js/JSON tweet)]
+        ^{:key (.-id el)} [:li (.-text el)]))]])
 
 ;; -------------------------
 ;; Views
 
 (defn home-page []
-  [:div [:h2 "Welcome to ts"]
-   [:div [:a {:href "#/about"} "go to about page"]]])
+  [:div [:h3 "Welcome and wait few sec..."]
+   (render-tweets)])
 
-(defn about-page []
-  [:div [:h2 "About ts"]
-   [:div [:a {:href "#/"} "go to the home page"]]])
+;; (defn about-page []
+;;   [:div [:h2 "About ts"]
+;;    [:div [:a {:href "#/"} "go to the home page"]]])
 
 (defn current-page []
   [:div [(session/get :current-page)]])
@@ -61,8 +67,8 @@
 (secretary/defroute "/" []
   (session/put! :current-page #'home-page))
 
-(secretary/defroute "/about" []
-  (session/put! :current-page #'about-page))
+;; (secretary/defroute "/about" []
+;;   (session/put! :current-page #'about-page))
 
 ;; -------------------------
 ;; History
@@ -82,4 +88,5 @@
 
 (defn init! []
   (hook-browser-navigation!)
+  (make-receiver)
   (mount-root))
