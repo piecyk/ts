@@ -1,5 +1,4 @@
 (ns ts.core
-  (:require-macros [cljs.core.async.macros :refer [go go-loop]])
   (:require [reagent.core :as reagent :refer [atom]]
               [reagent.session :as session]
               [secretary.core :as secretary :include-macros true]
@@ -7,7 +6,8 @@
               [goog.history.EventType :as EventType]
               [cljsjs.react :as react]
               [cljs.core.async :refer [chan <! >! put! close! timeout]])
-    (:import goog.History))
+  (:require-macros [cljs.core.async.macros :refer [go go-loop]])
+  (:import goog.History))
 
 
 (def create-ws-url

@@ -1374,3 +1374,10 @@ notifying browser that file changed:  /ts/core.js
 [0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
 [32mSuccessfully compiled "resources/public/js/app.js" in 0.223 seconds.[0m
 notifying browser that file changed:  /ts/core.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.259 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /ts/core.js
+notifying browser that file changed:  /ts/dev.js
