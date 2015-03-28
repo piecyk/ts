@@ -9,12 +9,12 @@
    [twitter.callbacks.handlers :as tch])
   (:import (twitter.callbacks.protocols AsyncStreamingCallback)))
 
-(def my-creds (oauth/make-oauth-creds "YqxzmJQXggdZqtQJ32zhuXXyl"
-                                      "lqIX7svDLRwV1ButIuHhdJPMQ4TA9tt4gKT6ddBQNXZ6REjhW7"
-                                      "11288422-CkpsJFt1Bx3CXq74TXrC0rQxqudiwzzhevwWTmnSq"
-                                      "4PpQEGFrKM2pRnCxgwlDCmKbw6eVqnUikL8QrQmSn6Fjh"))
+(def my-creds (oauth/make-oauth-creds "ui5VI9qV8zMASQcP0zGrVHnfV"
+                                      "HLIJiAfMWEvpfxsIrwzbdN9njelumMB4RghYv39zlpHyJtoX51"
+                                      "11288422-a4T4T5oqgWNUj3BPh5BXgSj26PpIQMcVKUmdQIbQq"
+                                      "f6QTuxeJSFeckKdM8Wgmo5tZvB3N5qkz5z7kmyUjZBGfe"))
 
-;;(def ^:dynamic *response* (tas/user-stream :oauth-creds my-creds))
+;; (def ^:dynamic *response* (tas/user-stream :oauth-creds my-creds))
 
 (defn my-statuses [clients]
   (tas/statuses-filter :params {:track "scala"}

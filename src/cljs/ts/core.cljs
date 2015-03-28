@@ -12,49 +12,48 @@
 
 ;; (def r (ct/reader :json))
 
-(def send (chan))
-(def receive (chan))
-(def tweets (atom []))
-
 (def ws-url
   (let [url (clojure.string/replace js/window.location.href #"^http" "ws")]
     (str url "ws")))
 (def ws (js/WebSocket. ws-url))
+
+(def send (chan))
+(def receive (chan))
+(def tweets (atom []))
+
 
 (defn add-tweet [tweets new-tweet]
   (.log js/console "add-tweet" (count tweets))
   (->> (cons new-tweet tweets)
        (take 10)))
 
+;; use cognitect.transit
+(defn parse [obj]
+  (try (.parse js/JSON obj)
+       (catch :default e js/undefined)))
+
+;; sad panda
 (defn recive-tweet []
   (.log js/console "recive-tweet")
   (go (while true
         (let [msg (<! receive)]
           (.log js/console "recive-tweet for chan")
-          ;; sad panda
-          (swap! tweets add-tweet (.-data msg))))))
+          ;; very sad panda...
+          (let [t (parse (.-data msg))]
+            (if (= t js/undefined)
+              (.log js/console "t is undefined:" (.-data msg))
+              (swap! tweets add-tweet t)))))))
 
 (defn make-receiver []
   (.log js/console "make recevier")
   (set! (.-onmessage ws) (fn [msg] (put! receive msg)))
   (recive-tweet))
 
-(defn parse [obj]
-  (try
-    (.parse js/JSON obj)
-    (catch :default e
-      js/undefined)))
-
 (defn render-tweets []
   [:div "Tweets stream for statuses @scala:"
-   [:ul
-    (for [tweet @tweets]
-      (let [el (parse tweet)]
-        (if (= el js/undefined)
-          (.log js/console "el is undefined")
-          ^{:key (.-id el)} [:li (.-text el)]
-          ))
-          )]])
+   [:ul (for [tweet @tweets]
+          ^{:key (.-id tweet)} [:li (.-text tweet)])]])
+
 
 ;; -------------------------
 ;; Views
