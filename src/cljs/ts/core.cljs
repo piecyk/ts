@@ -35,7 +35,7 @@
               (swap! tweets add-tweet t)))))))
 
 (defn make-receiver []
-  (h/log "make recevier")
+  (h/log "make recevier" ws)
   (set! (.-onmessage ws) #(put! receive %))
   (recive-tweet))
 
@@ -109,7 +109,11 @@
 (defn mount-root []
   (reagent/render [current-page] (.getElementById js/document "app")))
 
+(defn init-ws! []
+  (h/log "we have js/window")
+  (make-receiver))
+
 (defn init! []
   (hook-browser-navigation!)
-  (make-receiver)
+  (set! (.-onload js/window) init-ws!)
   (mount-root))
