@@ -1,6 +1,6 @@
 (ns ts.helpers
   (:require
-   [cognitect.transit :as ct]
+   ;;[cognitect.transit :as ct]
    [cljs.core.async :as async :refer [<! >! chan close! sliding-buffer dropping-buffer put! timeout]])
   (:require-macros
    [cljs.core.async.macros :as asyncm :refer [go alt!]]))
@@ -14,9 +14,10 @@
 
 ;; use cognitect.transit
 ;; (def r (ct/reader :json))
-(defn parse [obj]
-  (try (.parse js/JSON obj)
-       (catch :default e js/undefined)))
+
+;; (defn parse [obj]
+;;   (try (.parse js/JSON obj)
+;;        (catch :default e js/undefined)))
 
 (defn event-chan
   ([type] (event-chan js/window type))

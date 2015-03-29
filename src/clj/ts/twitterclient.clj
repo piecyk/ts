@@ -6,8 +6,10 @@
    [clojure.core.async :refer [chan go go-loop >!! <! >!]]
    [twitter.oauth :as oauth]
    [twitter.api.streaming :as tas]
-   [twitter.callbacks.handlers :as tch])
-  (:import (twitter.callbacks.protocols AsyncStreamingCallback)))
+   [twitter.callbacks.handlers :as tch]
+   [cheshire.core :as cheshire])
+  (:import (twitter.callbacks.protocols AsyncStreamingCallback)
+           (java.io ByteArrayOutputStream)))
 
 (def my-creds (oauth/make-oauth-creds "ui5VI9qV8zMASQcP0zGrVHnfV"
                                       "HLIJiAfMWEvpfxsIrwzbdN9njelumMB4RghYv39zlpHyJtoX51"
@@ -16,20 +18,36 @@
 
 ;; (def ^:dynamic *response* (tas/user-stream :oauth-creds my-creds))
 
+(defn parse [json-str]
+  (try
+    (cheshire/parse-string json-str)
+    (catch Exception e (println (str "caught exception: " (.getMessage e)))
+           nil)))
+
+(defn send-to-clients [clients, data]
+  (if-not (nil? data)
+    (doseq [client (keys @clients)]
+      (println "send new tweet" client)
+      (send! client (str data)))
+    {}))
+
 (defn my-statuses [clients]
+  (println "my-statuses")
   (tas/statuses-filter :params {:track "scala"}
                        :oauth-creds my-creds
-                       :callbacks (tas/AsyncStreamingCallback.
-                                   (fn [_resp payload]
-                                     (go ;; TODO: refactor
-                                       (if-not (clojure.string/blank? (str payload))
-                                         (doseq [client (keys @clients)]
-                                           (println "send new tweet")
-                                           (send! client (str payload)))
-                                         {})
-                                       (Thread/sleep (rand-int 1000))
-                                       ))
-                                   (fn [_resp]
-                                     (println _resp))
-                                   (fn [_resp ex]
-                                     (.printStackTrace ex)))))
+                       :callbacks (tas/AsyncStreamingCallback. ;; (send-to-clients clients (parse #(str %2)))
+                                                               (fn [_resp payload]
+                                                                 ;; (go ;; TODO: refactor
+                                                                   ;;(parse payload)
+                                                                   (send-to-clients clients (parse (str payload)))
+                                                                   ;; (if-not (clojure.string/blank? (str payload))
+                                                                   ;;   (doseq [client (keys @clients)]
+                                                                   ;;     (println "send new tweet" client)
+                                                                   ;;     (send! client (str payload)))
+                                                                   ;;   {})
+                                                                   ;; (Thread/sleep (rand-int 1000))
+                                                                   )
+                                                               (fn [_resp]
+                                                                 (println _resp))
+                                                               (fn [_resp ex]
+                                                                 (.printStackTrace ex)))))

@@ -5,6 +5,7 @@
               [goog.events :as events]
               [goog.history.EventType :as EventType]
               [cljsjs.react :as react]
+              [cljs.reader :as reader]
               [cljs.core.match :refer-macros [match]]
               [cljs.core.async :refer [chan <! >! put! close! timeout]]
               [ts.helpers :as h])
@@ -22,17 +23,12 @@
   (->> (cons new-tweet tweets)
        (take 10)))
 
-;; sad panda
 (defn recive-tweet []
   (h/log "recive-tweet")
   (go (while true
         (let [msg (<! receive)]
           (h/log "recive-tweet for chan")
-          ;; very sad panda...
-          (let [t (h/parse (.-data msg))]
-            (if (= t js/undefined)
-              (h/log "t is undefined:" (.-data msg))
-              (swap! tweets add-tweet t)))))))
+          (swap! tweets add-tweet (reader/read-string (.-data msg)))))))
 
 (defn make-receiver []
   (h/log "make recevier" ws)
@@ -41,33 +37,26 @@
 
 (defn render-tweets []
   [:div "Tweets stream for statuses @scala:"
-   [:ul (for [tweet @tweets]
-          ^{:key (.-id tweet)} [:li (.-text tweet)])]])
-
-;; checking on heroku?
-;; (go-loop []
-;;   (when-let [msg (<! receive)]
-;;     (h/log "we have msg")
-;;     (recur)))
-
-;; (go (while true
-;;       (alt!
-;;         receive ([result] (h/log "we have?")))))
+   [:ul (for [t @tweets]
+          ^{:key (get-in t ["id"])} [:li
+                                     [:div "Created " (get-in t ["created_at"])]
+                                     [:div (get-in t ["text"])]])]])
 
 ;; async
-(def mc (:chan (h/event-chan js/window "mousemove")))
-(def kc (:chan (h/event-chan js/window "keyup")))
+;; (def mc (:chan (h/event-chan js/window "mousemove")))
+;; (def kc (:chan (h/event-chan js/window "keyup")))
 
-(defn handler [[e c]]
-  (h/log e)
-  (match [e]
-         [{"x" x "y" y}] (h/log (str "mouse: " x ", " y))
-         [{"keyCode" code}] (h/log "key:" code)
-         :else (h/log "hmm?" e)))
+;; (defn handler [[e c]]
+;;   (.log js/console e)
+;;   (match [e]
+;;          [{"mousemove" type}] (h/log type)
+;;          [{"keyCode" code}] (h/log "key:" code)
+;;          :else (h/log "hmm?" e))
+;;   )
 
-(go
-  (while true
-    (handler (alts! [mc kc]) )))
+;; (go
+;;   (while true
+;;     (handler (alts! [mc kc]) )))
 
 ;; -------------------------
 ;; Views
