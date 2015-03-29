@@ -36,7 +36,7 @@
 
 (defn make-receiver []
   (h/log "make recevier")
-  (set! (.-onmessage ws) (fn [msg] (put! receive msg)))
+  (set! (.-onmessage ws) #(put! receive %))
   (recive-tweet))
 
 (defn render-tweets []
