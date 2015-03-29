@@ -5,47 +5,37 @@
               [goog.events :as events]
               [goog.history.EventType :as EventType]
               [cljsjs.react :as react]
-              [cognitect.transit :as ct]
-              [cljs.core.async :refer [chan <! >! put! close! timeout]])
-  (:require-macros [cljs.core.async.macros :refer [alt! go go-loop]])
+              [cljs.core.match :refer-macros [match]]
+              [cljs.core.async :refer [chan <! >! put! close! timeout]]
+              [ts.helpers :as h])
+  (:require-macros
+   [cljs.core.async.macros :refer [alt! go go-loop]])
   (:import goog.History))
 
-;; (def r (ct/reader :json))
-(defn log [& args]
- (.log js/console (str args)))
-;; use cognitect.transit
-(defn parse [obj]
-  (try (.parse js/JSON obj)
-       (catch :default e js/undefined)))
-
-(def ws-url
-  (let [url (clojure.string/replace js/window.location.href #"^http" "ws")]
-    (str url "ws")))
-(def ws (js/WebSocket. ws-url))
-
+(def ws (js/WebSocket. (h/ws-url "ws")))
 (def send (chan))
 (def receive (chan))
 (def tweets (atom []))
 
 (defn add-tweet [tweets new-tweet]
-  (log "add-tweet" (count tweets))
+  (h/log "add-tweet" (count tweets))
   (->> (cons new-tweet tweets)
        (take 10)))
 
 ;; sad panda
 (defn recive-tweet []
-  (log "recive-tweet")
+  (h/log "recive-tweet")
   (go (while true
         (let [msg (<! receive)]
-          (log "recive-tweet for chan")
+          (h/log "recive-tweet for chan")
           ;; very sad panda...
-          (let [t (parse (.-data msg))]
+          (let [t (h/parse (.-data msg))]
             (if (= t js/undefined)
-              (log "t is undefined:" (.-data msg))
+              (h/log "t is undefined:" (.-data msg))
               (swap! tweets add-tweet t)))))))
 
 (defn make-receiver []
-  (log "make recevier")
+  (h/log "make recevier")
   (set! (.-onmessage ws) (fn [msg] (put! receive msg)))
   (recive-tweet))
 
@@ -55,14 +45,29 @@
           ^{:key (.-id tweet)} [:li (.-text tweet)])]])
 
 ;; checking on heroku?
-(go-loop []
-  (when-let [msg (<! receive)]
-    (log "we have msg")
-    (recur)))
+;; (go-loop []
+;;   (when-let [msg (<! receive)]
+;;     (h/log "we have msg")
+;;     (recur)))
 
-(go (while true
-      (alt!
-        receive ([result] (log "we have?")))))
+;; (go (while true
+;;       (alt!
+;;         receive ([result] (h/log "we have?")))))
+
+;; async
+(def mc (:chan (h/event-chan js/window "mousemove")))
+(def kc (:chan (h/event-chan js/window "keyup")))
+
+(defn handler [[e c]]
+  (h/log e)
+  (match [e]
+         [{"x" x "y" y}] (h/log (str "mouse: " x ", " y))
+         [{"keyCode" code}] (h/log "key:" code)
+         :else (h/log "hmm?" e)))
+
+(go
+  (while true
+    (handler (alts! [mc kc]) )))
 
 ;; -------------------------
 ;; Views
